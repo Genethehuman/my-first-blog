@@ -36,6 +36,20 @@
                 </em>
             </p>
         </div>
+        <div>
+            {% for post in posts %}
+                <div>
+                    <h1><hr><a href="">{{post.title}} </a></h1>
+                    <p> {{post.text|linebreaksbr}} </p>
+                </div>
+                <div>
+                    <p><em> posted by: <b>{{post.author}}</b> on {{post.published_date}} </em></p>
+                </div>
+                
+                
+                
+            {% endfor %}
+        </div>
     </body>
 
 </html>
