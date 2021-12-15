@@ -1,0 +1,59 @@
+{% load static %}
+<html>
+    <head>
+        <title>Genochka blog</title> 
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        
+        
+    </head>
+    <body>
+        <div class="page_header">
+            <h1><center> This is Videoblog!</center></h1>
+        </div>
+        <div>
+            <p> I've worked hard on it. But here I am, still studying Python
+                and HTML now and what can I say? That damn thing works! My blog is about 
+                me becoming a professional developer and rich successful man and about my
+                lifechange after all that. It's also about my life, about what things
+                I can afford, doing this job, what car I'm going to drive when I get hired. 
+                And also about how I can get back on track with my music and become a 
+                Rock Star, doing this job as my support in the beginning! If you are still
+                here with me, I'm glad, my name is <a href='https://www.instagram.com/let_me_vomit/'>Gennady</a>,
+                 nice to meet you!
+            
+            </p>
+        </div>
+        <div>
+            <h2><center> What's up?</center></h2>
+            <p>
+                Everything about what's going on in my life is going to be posted
+                in little topics that this main page has links too. You can also
+                follow my instagram clicking on my name above to be up to date about
+                my music life. Check out my bands by the way, if you like Rock, you
+                might find them entertaining: <a href='https://www.instagram.com/chernobears.music/'>Chernobears</a>,
+                <a href='https://www.instagram.com/holydirtmusic/'>Holy Dirt</a>
+            </p>
+        </div>
+        <div>
+            <h3><em>Dear Diary,</em> </h3>
+            <p>
+                <em>For now I'm living with my asshole roommate in the place that 
+                    feels less and less like home these days, but everything is
+                    going to change and become what I want it to be soon 12.12.2021
+                </em>
+            </p>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
